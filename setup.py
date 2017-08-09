@@ -44,6 +44,7 @@ if sys.version_info[0] == 3 and sys.argv[-1] != 'upload':
 
 packages = [
     'newspaper',
+    'newspaper.videos',
 ]
 
 
@@ -59,6 +60,7 @@ setup(
     author_email='lucasyangpersonal@gmail.com',
     url='https://github.com/codelucas/newspaper/',
     packages=packages,
+    package_data={'newspaper': ['newspaper/resources/*.txt']}
     include_package_data=True,
     install_requires=required,
     license='MIT',
