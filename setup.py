@@ -60,7 +60,7 @@ setup(
     author_email='lucasyangpersonal@gmail.com',
     url='https://github.com/codelucas/newspaper/',
     packages=packages,
-    package_data={'newspaper': ['newspaper/resources/*.txt']}
+    package_data={'newspaper': ['newspaper/resources/*.txt']},
     include_package_data=True,
     install_requires=required,
     license='MIT',
