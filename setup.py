@@ -19,10 +19,7 @@ def hilight(input_string):
     return '\x1b[%sm%s\x1b[0m' % (';'.join(attr), input_string)
 
 
-try:
-    from setuptools import setup
-except ImportError:
-    from distutils.core import setup
+from distutils.core import setup
 
 
 if sys.argv[-1] == 'publish':
